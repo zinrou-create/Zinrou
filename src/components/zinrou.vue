@@ -1,12 +1,16 @@
-Vue.component('button-counter', {
-  data: function () {
-    return {
-      count: 0
+<template>
+  <div>
+    <h1>{{ msg }}</h1>
+  </div>
+</template>
+
+<script>
+  export default {
+    name: 'zinrou',
+    data() {
+      return {
+        msg: 'hogemoge'
+      }
     }
-  },
-  template: '<button v-on:click="count++">You clicked me {{ count }} times.</button>'
-})
-<div id="components-demo">
-  <button-counter></button-counter>
-</div>
-new Vue({ el: '#components-demo' })
+  }
+</script>
